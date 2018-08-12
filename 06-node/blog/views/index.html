@@ -1,0 +1,25 @@
+<!-- 继承公共模板 -->
+{{ extend './layout.html' }}
+
+<!-- 填坑 -->
+{{ block 'content' }}
+<div>
+  <h2>我是index中的内容,{{name}}</h2>
+</div>
+{{ /block }}
+
+<!-- 头部填坑 -->
+{{ block 'head' }}
+<style>
+  body {
+    background-color: skyblue;
+  }
+</style>
+{{ /block }}
+
+<!-- script填坑 -->
+{{ block 'script' }}
+<script>
+  console.log('我是script处填坑的');
+</script>
+{{ /block }}
